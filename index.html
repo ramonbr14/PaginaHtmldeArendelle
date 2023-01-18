@@ -3,69 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Cadastro de Cidadãos - Reino de Arendelle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <br><br>
+    ç<label for="areatexto">Esse Texto</label>
+    <textarea name="texto" id="areatexto" cols="30" rows="10">
+
+    </textarea>
     <form action="">
-        <input type="password"
-        pattern="[0-9a-fA-F]{4,8}"
-        placeholder="Coloca sua senha, por favor">
-
-        <button type="submit">Enviado</button>
-    </form>
-    
-
-    <br>
-    <input type="text" autocomplete="email" autofocus><br>
-    <input type="text" value="DESABILITADO" disabled><br>
-    <input type="text" value="apenas leitura" readonly>
-    <br><br><br><br>
-    <input type="text" placeholder="Texto" required><br>
-    <input type="date"><br>
-    <input type="number" placeholder="numero"><br>
-    <input type="email" placeholder="email"><br>
-    <input type="file"><br>
-    <input type="password"><br>
-
-    <br><br><br><br><br>
-    <input type="text" list="fruitsdata" placeholder="Escolha uma fruta"/>
-    
-    <datalist id="fruitsdata">
-        <option>apple</option>
-        <option>banana-papaya</option>
-        <option>manga</option>
-        <option>orange</option>
-        <option>jabuticaba</option>
-    </datalist>
-
-    <input type="color" list="fruitsdata"/>
-    
-    <br>
-    **********************************************
-    <br><br><br><br><br>
-    <form id="Contato" action="" method="get">
-        <button type="submit">Manda Ver! Manda Ver! Manda Ver! Manda Ver!</button>
+        <input type="url" 
+        placeholder="http://"
+        required
+        pattern="">
+        <button type="submit">VERIFICAR URL</button>
+        <br>
+        <input type="file"
+        multiple
+        accept=".pdf" 
+        placeholder="http://"
+        required
+        pattern="">
+        <button type="submit">VERIFICAR URL</button>
     </form>
 
-    <fieldset form="Contato" name="input-contat">
-        <legend>Contato</legend>
-        <label for="">Nome</label>
-        <input type="text">
-        <button type="reset">Rainha Elsa Limpar</button>
+
+    <fieldset>
+        <legend>Tem Cafê?</legend>
+        
+        <label for="yep">Sim</label>
+        <input type="radio" id="yep" name="coffee" value="yes">
+
+        <label for="nono">Não</label>
+        <input type="radio" id="nono" name="coffee" value="yes">
+
+        <label for="mabe">Talvez?</label>
+        <input checked type="radio" id="mabe" name="coffee" value="maybe">
     </fieldset>
 
-    <p>**********************************************************************************************</p>
-    <label for="nome">
-        Nome Completo:
-        <input id="nome" type="text">
-        <button type="submit" disabled>Rainha Elsa Enviar</button>
-        <button value="autofocus" type="button">Rainha Elsa buttar</button>
-    </label>
-
-    <form action="" id="meu-form"></form>
-
-    <button type="submit" form="meu-form">Não aperte esse Botão</button>
+    <label>MENSAGEM</label>
+    <textarea 
+    rows="10" 
+    cols="5" 
+    maxlength="10" 
+    minlength="9"
+    wrap="on"></textarea>
 </body>
 </html>
